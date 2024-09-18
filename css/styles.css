@@ -192,7 +192,7 @@ z-index: -1;
     flex-direction: column;
     justify-content: space-between;
     z-index: var(--z-fixed);
-    transition: right .4;
+    transition: right .4s;
 }
 
 .nav_logo{
@@ -235,4 +235,9 @@ z-index: -1;
     right: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* show menu */
+.show_menu{
+    right: 0;
 }
