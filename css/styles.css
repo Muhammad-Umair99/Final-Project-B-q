@@ -175,3 +175,64 @@ z-index: -1;
 .header_input::placeholder{
     color: var(--white-color);
 }
+
+
+/* NAV */
+.nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 0%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 285px;
+    height: 100%;
+    padding: 3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: var(--z-fixed);
+    transition: right .4;
+}
+
+.nav_logo{
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.nav_logo,
+.nav_list{
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--white-color-light);
+
+}
+
+.nav_menu,
+.nav_list{
+    display: grid;
+    row-gap: 2rem;
+}
+
+.nav_link{
+    color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.nav_link i{
+    font-size: 1.5rem;
+}
+
+.nav_title{
+    font-size: var(--normal-font-size);
+    margin-bottom: .75rem;
+}
+
+.nav_close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

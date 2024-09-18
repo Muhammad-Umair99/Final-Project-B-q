@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Responsive Movie Dashboard</title>
 </head>
+
 <body>
     <img src="images/banner.png" alt="image" class="bg_image">
     <div class="bg_blur"></div>
 
     <!-- HEADER -->
-     <header class="header" id="header">
+    <header class="header" id="header">
         <div class="header_content">
-            <a href="#" class="header_logo">PELIXS</a>
+            <a href="#" class="header_logo">Movie Hub</a>
 
             <div class="header_action">
                 <i class="ri-notification-2-line"></i>
@@ -30,9 +32,68 @@
             <i class="ri-search-line"></i>
             <input type="search" placeholder="Search Movies" class="header_input">
         </form>
-     </header>
+    </header>
 
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav_menu">
+            <a href="#" class="nav_logo">Movie Hub</a>
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">
+                        <i class="ri-home-5-line"></i><span>Home</span>
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">
+                        <i class="ri-movie-line"></i><span>Movies</span>
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">
+                        <i class="ri-film-line"></i><span>Series</span>
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav_link">
+                        <i class="ri-heart-3-line"></i><span>Favorites</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div>
+                <h3 class="nav_title">  Account</h3>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="ri-account-circle-line"></i><span>Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item"></li>
+                        <a href="#" class="nav_link">
+                            <i class="ri-account-circle-fill"></i><span>Profile 2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="#" class="nav_link">
+            <i class="ri-logout-box-line"></i><span>Log Out</span>
+        </a>
+
+        <div class="nav_close" id="nav_close">
+            <i class="ri-close-line"></i>
+        </div>
+    </nav>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
