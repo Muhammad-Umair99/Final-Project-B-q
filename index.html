@@ -20,7 +20,7 @@
 
             <div class="header_action">
                 <i class="ri-notification-2-line"></i>
-                <i class="ri-account-circle-line"></i>
+                <i class="ri-account-circle-line accountLink"></i>
 
                 <div class="header_menu" id="header_menu">
                     <i class="ri-menu-line"></i>
@@ -66,7 +66,7 @@
             </ul>
 
             <div>
-                <h3 class="nav_title">  Account</h3>
+                <h3 class="nav_title"> Account</h3>
 
                 <ul class="nav_list">
                     <li class="nav_item">
@@ -76,9 +76,9 @@
                     </li>
 
                     <li class="nav_item"></li>
-                        <a href="#" class="nav_link">
-                            <i class="ri-account-circle-fill"></i><span>Profile 2</span>
-                        </a>
+                    <a href="#" class="nav_link">
+                        <i class="ri-account-circle-fill"></i><span>Profile 2</span>
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -92,6 +92,47 @@
             <i class="ri-close-line"></i>
         </div>
     </nav>
+
+
+    <!-- Back Arrow Icon -->
+    <div class="back-arrow" id="back-arrow">
+        <i class="ri-arrow-left-line"></i>
+    </div>
+
+    <!-- Sign Up / Sign In Form -->
+    <div class="container" id="auth-container" style="display: none;">
+        <div class="form-box">
+            <h1 class="title">Sign Up</h1>
+            <div class="underline"></div>
+
+            <form>
+                <div class="input-group">
+                    <div class="input-field namefield">
+                        <i class="ri-user-fill"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="ri-mail-fill"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="ri-key-fill"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <p><span class="text">Password Suggestions</span> <a href="#">Click Here</a></p>
+                </div>
+
+                <div class="btn-field">
+                    <button type="button" class="signupbtn">Sign up</button>
+                    <button type="button" class="disable signinbtn">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div> <!-- End of Container -->
+
 
     <script src="js/main.js"></script>
 </body>
