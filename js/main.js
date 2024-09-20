@@ -3,16 +3,16 @@ headerMenu = document.getElementById("header_menu");
 navClose = document.getElementById("nav_close");
 
 // menu show
-if(headerMenu){
-    headerMenu.addEventListener("click",()=>{
+if (headerMenu) {
+    headerMenu.addEventListener("click", () => {
         nav.classList.add("show_menu")
     })
 }
 
 
 // menu hidden
-if(navClose){
-    navClose.addEventListener("click",()=>{
+if (navClose) {
+    navClose.addEventListener("click", () => {
         nav.classList.remove("show_menu")
     })
 }
@@ -64,5 +64,29 @@ if (backArrow) {
     });
 }
 
+
+
+// SWIPER Movie
+let swiperMovie = new Swiper('.movie-swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+
+    breakpoints: {
+        440: {
+            slidesPerView: "auto",
+
+        },
+        768: {
+            slidesPerView: 4,
+
+        },
+        1200: {
+            slidesPerView: 5,
+
+        }
+    }
+})
 
 
