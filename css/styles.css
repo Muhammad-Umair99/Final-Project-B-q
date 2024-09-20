@@ -452,3 +452,13 @@ button.disable{
     font-size: 1.25rem;
     cursor: pointer;
 }
+
+/* Movies */
+.movie{
+    display: grid;
+}
+
+/* swiper class */
+.swiper{
+    margin-inline: initial;
+}

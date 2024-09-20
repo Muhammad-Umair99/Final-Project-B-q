@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Responsive Movie Dashboard</title>
 </head>
@@ -138,113 +140,114 @@
     <main class="main">
         <!-- Banner -->
         <section class="banner">
-                <article class="banner-card">
-                    <a href="" class="banner-link">
-                        <img src="/images/banner.png" alt="image" class="banner-image">
-                        <div class="banner-shadow"></div>
+            <article class="banner-card">
+                <a href="" class="banner-link">
+                    <img src="/images/banner.png" alt="image" class="banner-image">
+                    <div class="banner-shadow"></div>
 
-                        <div class="banner-data">
-                            <h2 class="banner-title">Avengers</h2>
-                            <span class="banner-category">Action</span>
-                        </div>
-                    </a>
-                </article>
+                    <div class="banner-data">
+                        <h2 class="banner-title">Avengers</h2>
+                        <span class="banner-category">Action</span>
+                    </div>
+                </a>
+            </article>
         </section>
 
         <!-- Movies -->
-<section class="movie">
-    <h3 class="card-title">Movies</h3>
+        <section class="movie">
+            <h3 class="card-title">Movies</h3>
 
-    <div class="movie-swiper">
-        <div>
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-1.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+            <div class="movie-swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-1.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">Avengers</h3>
-                        <span class="card-category">Action</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">Avengers</h3>
+                                <span class="card-category">Action</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
 
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-2.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-2.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">Interstellar</h3>
-                        <span class="card-category">Science/Fiction</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">Interstellar</h3>
+                                <span class="card-category">Science/Fiction</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
 
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-3.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-3.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">The Lord of the Rings</h3>
-                        <span class="card-category">Science/Fiction</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">The Lord of the Rings</h3>
+                                <span class="card-category">Science/Fiction</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
 
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-4.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-4.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">Inception</h3>
-                        <span class="card-category">Action</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">Inception</h3>
+                                <span class="card-category">Action</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
 
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-5.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-5.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">The Dark Night</h3>
-                        <span class="card-category">Science/Fiction</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">The Dark Night</h3>
+                                <span class="card-category">Science/Fiction</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
 
-            <article class="card-article">
-                <a href="" class="card-link">
-                    <img src="/images/movie-6.png" alt="image" class="card-image">
-                    <div class="card-shadow"></div>
+                    <article class="card-article swiper-slide">
+                        <a href="" class="card-link">
+                            <img src="/images/movie-6.png" alt="image" class="card-image">
+                            <div class="card-shadow"></div>
 
-                    <div class="card-data">
-                        <h3 class="card-name">Avengers The Age of Ultron</h3>
-                        <span class="card-category">Action</span>
-                    </div>
+                            <div class="card-data">
+                                <h3 class="card-name">Avengers The Age of Ultron</h3>
+                                <span class="card-category">Action</span>
+                            </div>
 
-                    <i class="ri-heart-3-line card-like"></i>
-                </a>
-            </article>
-        </div>
-    </div>
-</section>
+                            <i class="ri-heart-3-line card-like"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
 </body>
