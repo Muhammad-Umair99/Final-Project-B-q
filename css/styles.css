@@ -462,3 +462,21 @@ button.disable{
 .swiper{
     margin-inline: initial;
 }
+
+
+
+/* NEW */
+.new{
+    position: relative;
+    display: grid;
+}
+
+.new-card{
+    scale: .8;
+    transition: scale .4s;
+}
+
+.new-data{
+    opacity: 0;
+    transition: opacity .4s;
+}
