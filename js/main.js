@@ -89,4 +89,38 @@ let swiperMovie = new Swiper('.movie-swiper', {
     }
 })
 
+// SWIPER NEW
+let swiperNew = new Swiper('.new-swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 2,
+    centeredSlides: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    
+
+    breakpoints: {
+        440: {
+            slidesPerView: "auto",
+                centeredSlides: false,
+
+
+        },
+        768: {
+            slidesPerView: 4,
+                centeredSlides: false,
+
+
+        },
+        1200: {
+            slidesPerView: 5,
+                centeredSlides: false,
+
+
+        }
+    }
+})
 

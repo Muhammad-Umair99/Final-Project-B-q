@@ -9,9 +9,9 @@
     --white-color: hsl(0, 0%, 100%);
     --white-color-light: hsl(0, 0%, 90%);
     --shadow-bg: linear-gradient(180deg,
-                hsla(0, 0%, 0%, 0) 60%,                 
-                hsla(0, 0%, 0%, 0.7) 78%);
-                
+            hsla(0, 0%, 0%, 0) 60%,
+            hsla(0, 0%, 0%, 0.7) 78%);
+
     /* Font & Typography */
     --body-font: "Montserrat", sans-serif;
     --big-font-size: 1.5rem;
@@ -46,7 +46,7 @@
 
 /* Base */
 /* the "Base" section in my CSS establishes foundational styles for my website, ensuring consistency and a clean starting point for more detailed and specific styling later. */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,9 +65,9 @@ body {
 
 input,
 button {
-    border:  none ;
+    border: none;
     outline: none;
-} 
+}
 
 ul {
     list-style: none;
@@ -84,7 +84,7 @@ img {
 }
 
 /* LAYOUT */
-.main{
+.main {
     display: grid;
     row-gap: 1.5rem;
     margin-inline: 1.5rem;
@@ -92,27 +92,27 @@ img {
 }
 
 .bg_image,
-.bg_blur{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100vh;
-z-index: -1;
+.bg_blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
-.bg_image{
+.bg_image {
     object-fit: cover;
     object-position: center;
 }
 
-.bg_blur{
+.bg_blur {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
 
 /* HEADER */
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -126,32 +126,32 @@ z-index: -1;
 
 .header_content,
 .header_action,
-.header_search{
+.header_search {
     display: flex;
 }
 
-.header_content{
+.header_content {
     justify-content: space-between;
     align-items: center;
 }
 
-.header_logo{
+.header_logo {
     color: var(--white-color);
     font-weight: var(--font-medium);
 }
 
-.header_action{
+.header_action {
     column-gap: .75rem;
     align-items: center;
     font-size: 1.25rem;
 }
 
 .header_action,
-.header_menu{
+.header_menu {
     cursor: pointer;
 }
 
-.header_search{
+.header_search {
     align-items: center;
     column-gap: .5rem;
     background-color: hsla(0, 0%, 100%, .15);
@@ -165,20 +165,20 @@ z-index: -1;
     font-size: 1rem;
 }
 
-.header_input{
+.header_input {
     width: 100%;
     padding-block: 1rem;
     background-color: transparent;
     color: var(--white-color);
 }
 
-.header_input::placeholder{
+.header_input::placeholder {
     color: var(--white-color);
 }
 
 
 /* NAV */
-.nav{
+.nav {
     position: fixed;
     top: 0;
     right: -100%;
@@ -195,41 +195,41 @@ z-index: -1;
     transition: right .4s;
 }
 
-.nav_logo{
+.nav_logo {
     color: var(--white-color);
     font-weight: var(--font-semi-bold);
 }
 
 .nav_logo,
-.nav_list{
+.nav_list {
     padding: 1.25rem;
     border-bottom: 1px solid var(--white-color-light);
 
 }
 
 .nav_menu,
-.nav_list{
+.nav_list {
     display: grid;
     row-gap: 2rem;
 }
 
-.nav_link{
+.nav_link {
     color: var(--white-color);
     display: inline-flex;
     align-items: center;
     column-gap: .75rem;
 }
 
-.nav_link i{
+.nav_link i {
     font-size: 1.5rem;
 }
 
-.nav_title{
+.nav_title {
     font-size: var(--normal-font-size);
     margin-bottom: .75rem;
 }
 
-.nav_close{
+.nav_close {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -238,35 +238,38 @@ z-index: -1;
 }
 
 /* show menu */
-.show_menu{
+.show_menu {
     right: 0;
 }
 
- /* Sign Up / Sign In Form  */
+/* Sign Up / Sign In Form  */
 /* Container for the form */
 .container {
     width: 100%;
     height: 100vh;
-    background-image: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('/images/Avengers-Age-of-Ultron-Joss-Whedon.webp');
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed; /* Cover the whole screen */
+    position: fixed;
+    /* Cover the whole screen */
     top: 0;
     left: 0;
-    z-index: 999; /* Ensure it's above other content */
-    display: none; /* Hidden by default */
+    z-index: 999;
+    /* Ensure it's above other content */
+    display: none;
+    /* Hidden by default */
 }
 
 .form-box {
     width: 90%;
     max-width: 550px;
     min-width: 350px;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 55px;
     text-align: center;
     border-radius: 10px;
@@ -293,7 +296,7 @@ z-index: -1;
     margin: 15px 0;
     display: flex;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border: 1px solid rgba(0, 0, 0, 0.3);
 
 
     max-height: 60px;
@@ -301,7 +304,7 @@ z-index: -1;
     overflow: hidden;
 }
 
-.input-field input{
+.input-field input {
     width: 100%;
     background: transparent;
     border: 0;
@@ -309,30 +312,30 @@ z-index: -1;
     padding: 18px 15px;
 }
 
-.input-field i{
-   margin-left: 15px;
-   color: #999;
+.input-field i {
+    margin-left: 15px;
+    color: #999;
 }
 
-form p{
-     text-align: left;
-     font-size: 13px;
+form p {
+    text-align: left;
+    font-size: 13px;
     color: black;
     font-weight: 700;
 }
 
-form p a{
+form p a {
     text-decoration: none;
     color: #007BFF;
 }
 
-.btn-field{
+.btn-field {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.btn-field button{
+.btn-field button {
     flex-basis: 48%;
     background-color: #007BFF;
     height: 40px;
@@ -344,11 +347,12 @@ form p a{
     transition: background 1s;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
-.input-group{
+
+.input-group {
     height: 280px;
 }
 
-button.disable{
+button.disable {
     background-color: #eaeaea;
     color: #555;
 }
@@ -356,31 +360,39 @@ button.disable{
 /* Back Arrow Styles */
 .back-arrow {
     position: fixed;
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    font-size: 24px; /* Icon size */
-    color: white; /* Icon color */
-    cursor: pointer; /* Change cursor on hover */
-    z-index: 1000; /* Ensure it’s above other elements */
+    top: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    /* Adjust as needed */
+    font-size: 24px;
+    /* Icon size */
+    color: white;
+    /* Icon color */
+    cursor: pointer;
+    /* Change cursor on hover */
+    z-index: 1000;
+    /* Ensure it’s above other elements */
     display: none;
 }
 
 .back-arrow:hover {
-    color: lightgray; /* Change color on hover */
+    color: lightgray;
+    /* Change color on hover */
 }
 
 /* Banner */
-.banner-link{
+.banner-link {
     position: relative;
     display: grid;
     place-items: center;
     color: white;
 }
-.banner-image{
+
+.banner-image {
     border-radius: 1rem;
 }
 
-.banner-shadow{
+.banner-shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -389,38 +401,39 @@ button.disable{
     background: var(--shadow-bg);
     border-radius: 1rem;
 }
-.banner-data{
+
+.banner-data {
     position: absolute;
     bottom: 1.5rem;
     text-align: center;
 }
 
-.banner-title{
+.banner-title {
     font-size: var(--big-font-size);
 }
 
 /* Cards */
-.card-title{
+.card-title {
     font-size: var(--h2-font-size);
     margin-bottom: .75rem;
 }
 
-.card-article{
+.card-article {
     width: 152px;
 }
 
-.card-link{
+.card-link {
     position: relative;
     display: grid;
     place-items: center;
     color: var(--white-color);
 }
 
-.card-image{
+.card-image {
     border-radius: 1rem;
 }
 
-.card-shadow{
+.card-shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -430,22 +443,22 @@ button.disable{
     border-radius: 1rem;
 }
 
-.card-data{
+.card-data {
     position: absolute;
     bottom: 1rem;
     text-align: center;
     padding-inline: .75rem;
 }
 
-.card-name{
+.card-name {
     font-size: var(--normal-font-size);
 }
 
-.card-category{
+.card-category {
     font-size: var(--small-font-size);
 }
 
-.card-like{
+.card-like {
     position: absolute;
     top: .75rem;
     right: .75rem;
@@ -454,12 +467,12 @@ button.disable{
 }
 
 /* Movies */
-.movie{
+.movie {
     display: grid;
 }
 
 /* swiper class */
-.swiper{
+.swiper {
     margin-inline: initial;
 }
 
@@ -467,17 +480,43 @@ button.disable{
 
 /* make new section css */
 /* NEW */
-.new{
+.new {
     position: relative;
     display: grid;
 }
 
-.new-card{
+.new-card {
     scale: .8;
     transition: scale .4s;
 }
 
-.new-data{
+.new-data {
     opacity: 0;
     transition: opacity .4s;
+}
+
+/* swiper class */
+.swiper-slide-active .new-data {
+    opacity: 1;
+}
+
+.new .swiper-slide-active,
+.new .swiper-slide-duplicate-active {
+    scale: 1
+}
+
+.new .swiper-pagination-bullets {
+    bottom: -2.5rem;
+}
+
+.new .swiper-pagination-bullet {
+    width: 1.5rem;
+    height: .25rem;
+    border-radius: 1rem;
+    background-color: var(--white-color);
+    transition: background-color .3s, opacity .3s;
+}
+
+.new .swiper-pagination-bullet-aciive{
+    background-color: var(--white-color);
 }
