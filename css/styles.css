@@ -517,7 +517,7 @@ button.disable {
     transition: background-color .3s, opacity .3s;
 }
 
-.new .swiper-pagination-bullet-aciive{
+.new .swiper-pagination-bullet-active{
     background-color: var(--white-color);
 }
 
@@ -539,3 +539,82 @@ button.disable {
     background: #4f44a8;
 }
 
+/* Break Points */
+/* @media screen and (max-width: 300px) {
+    .main{
+        margin-inline: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .banner-card,
+    .banner-img{
+        height: 400px;
+    }
+    .banner-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .main{
+        margin-inline: 20rem 2rem;
+        row-gap: 2.5rem;
+        padding-top: 7.5rem;
+    }
+   .nav{
+    right: initial;
+    left: 0;
+   }
+
+   .nav_close,
+   .header_menu,
+   .header_logo{
+    display: none;
+   }
+   .header{
+    width: calc(100% - 17rem);
+    left: initial;
+    right: 0;
+    height: calc(var(--header-height)+ 2rem);
+    grid-template-columns: repeat(2, max-content);
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 3rem;
+   }
+
+   .header_search{
+    order: -1;
+    width: 450px;
+   }
+
+   .header_action{
+    column-gap: 1.25rem;
+    font-size: 1.5rem;
+   }
+}
+
+@media screen and (min-width: 1150px) {
+    .banner-data{
+        bottom: 2.5rem;
+    }
+
+    .banner-category{
+        font-size: var(--h1-font-size);
+    }
+}
+
+@media screen and (min-width: 1300) {
+    .banner-card,
+    .banner-image{
+        height: 480px;
+    }
+
+    .banner-image,
+    .banner-shadow{
+        border-radius: 2rem;
+    }
+} */
